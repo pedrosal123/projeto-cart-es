@@ -1,0 +1,25 @@
+sistema-cartoes/ 
+├── backend/              # API e lógica de negócio 
+│   ├── src/ 
+│   │   ├── controllers/  # Lógica das rotas 
+│   │   ├── models/       # Modelos do banco 
+│   │   ├── routes/       # Definição de rotas 
+│   │   ├── config/       # Configurações 
+│   │   └── server.js     # Arquivo principal 
+│   ├── package.json 
+│   └── .env              # Variáveis de ambiente 
+│ 
+├── frontend/             # Interface do usuário 
+│   ├── public/ 
+│   ├── src/ 
+│   │   ├── components/   # Componentes React 
+│   │   ├── pages/        # Páginas 
+│   │   ├── services/     # Comunicação com API 
+│   │   └── App.js        # Componente principal 
+│   └── package.json 
+│ 
+├── database/             # Scripts SQL 
+│   ├── schema.sql        # Estrutura das tabelas 
+│   └── seed.sql          # Dados iniciais 
+│ 
+└── README.md             # Documentação

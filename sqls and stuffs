@@ -19,7 +19,14 @@ sistema-cartoes/
 │   └── package.json 
 │ 
 ├── database/             # Scripts SQL 
-│   ├── schema.sql        # Estrutura das tabelas 
+│   ├── schema.sql
+|   |   ├── acessos {id, cartao_id, local_id, data_hora, permitido, motivo}
+|   |   ├── alunos {id, nome, email, telefone, foto_url, curso_id, status, data_matricula, created_at}
+|   |   ├── cartoes {id, codigo_unico, aluno_id, qrcode_url, data_emissao, data_validade, status, motivo_bloqueio, created_at}
+|   |   ├── cursos {id, nome, codigo, periodo, ativo, created_at}
+|   |   ├── permissoes {id, curso_id, local_id, horario_inicio, horario_fim, ativo, created_at}
+|   |   ├── salas {id, numero_sala, nome, capacidade, andar, ativo, created_at}
+|   |   ├── acessos {id, nome, email, senha_hash, perfil, ativo, ultimo_acesso, created_at}
 │   └── seed.sql          # Dados iniciais 
 │ 
 └── README.md             # Documentação
